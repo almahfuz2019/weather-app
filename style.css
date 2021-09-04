@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/bg-image.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.bg-sec {
+    background-color: #033a5e5d;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
+}
