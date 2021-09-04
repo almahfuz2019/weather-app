@@ -8,27 +8,25 @@ const searchTemperature = () => {
         .then(data => displayTemparature(data))
 
 }
+
+
 const setInnerText = (id, text) => {
     document.getElementById(id).innerText = text;
 }
 const displayTemparature = temparature => {
-    console.log(temparature);
+    // console.log(temparature);
     setInnerText('city', temparature.name);
     setInnerText('temperature', temparature.main.temp);
     setInnerText('feels', temparature.main.feels_like);
     setInnerText('max', temparature.main.temp_max);
     setInnerText('min', temparature.main.temp_min);
     setInnerText('country', temparature.sys.country);
-
-
-
     setInnerText('condition', temparature.weather[0].main);
     setInnerText('situation', temparature.weather[0].description);
 
 
-
-    //icon
-    const urlIcon = `http://openweathermap.org/img/wn/${temperature.weather[0].icon}@2x.png`;
+    const url1 = `https://openweathermap.org/img/wn/${temparature.weather[0].icon}@2x.png`;
     const imgIcon = document.getElementById('weather-icon');
-    imgIcon.setAttribute('src', urlIcon);
+    imgIcon.setAttribute('src', url1);
+
 }
