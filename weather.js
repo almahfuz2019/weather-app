@@ -24,7 +24,7 @@ const displayTemparature = temparature => {
 
     setInnerText('condition', temparature.weather[0].main);
     setInnerText('situation', temparature.weather[0].description);
-    setInnerText('time', temparature.timezone);
+
 
 
     //icon
